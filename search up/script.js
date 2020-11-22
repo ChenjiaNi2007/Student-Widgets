@@ -10,7 +10,7 @@ btn.onclick = function () {
 		}
 	}
 	if(selectedValue == "Wikipedia"){
-		window.open(`en.wikipedia.org/wiki/${mytext}`);
+		window.open(`https://en.wikipedia.org/wiki/${mytext}`);
 	}
 	else {
 		window.open(`https://www.britannica.com/search?query=${mytext}`);
