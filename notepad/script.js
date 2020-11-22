@@ -11,6 +11,4 @@ function add_on() {
 
   titleInput.value = '';
   bodyinput.value = '';
-
-  div.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
 }
