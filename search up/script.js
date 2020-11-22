@@ -2,19 +2,13 @@ const btn = document.querySelector('#btn');
 
 btn.onclick = function () {
 	const mytext = document.querySelector('#text-in').value;
-	let selectedValue;
-	var radios = document.querySelectorAll('.ra');
+	var rd1 = document.getElementById("rd1");
+	var rd2 = document.getElementById("rd2");
 
-	for(radio in radios){
-		if(radio.checked){
-			selectedValue = radio.value;
-		}
-	}
-	console.log("finihaeorjghflsreg")
-	if(selectedValue == "Wikipedia"){
+	if(rd1.checked){
 		window.open(`https://en.wikipedia.org/wiki/${mytext}`);
 	}
-	if(selectedValue == "Britannica") {
+	if(rd2.checked) {
 		window.open(`https://www.britannica.com/search?query=${mytext}`);
 	}
 }
