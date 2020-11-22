@@ -6,7 +6,37 @@
 	<script src="script.js" defer></script>
 </head>
 <body>
-	<div class="calculator-grid">
+	<div id="title">
+		<h3> Calculator </h3>
+		<hr>
+	</div>
+	<div id="content"> This is our calculator, with mathematical formulas to help </div>
+	<div class="conversions" id="column">
+		<p> <b>Length Conversions</b> <br>
+		1 mile = 5,280 ft = 1,760 yards = 1,609.34 m = 1.609 km <br>
+		1 ft = 12 inches = 0.305 m = 30.48 cm<br>
+		1 inch = 2.54 cm = 25.4 mm<br>
+		1 km = 1,000 m = 0.621 miles<br>
+		1 m = 39.37 inches = .3281 ft = 1.094 yards<br>
+		1 cm = 10 mm = 0.394 inches<br>
+		1 mm = 0.04 inches<br>
+		<b>Weight Conversions</b><br>
+		1 ton = 2,000 lbs = 907.18 kg<br>
+		1 lb = 16 oz = 453.59 g = 0.454 kg<br>
+		1 oz = 28.35 g<br>
+		1 kg = 2.205 lbs = 1,000 g = 1,000,000 mg<br>
+		<b>Capacity conversions</b><br>
+		1 gallon = 4 quarts = 8 pints = 16 cups = 3.785 liters<br>
+		1 quart = 0.946 liters<br>
+		1 liter = 1.057 quarts = 0.264 gallons<br>
+		<b>Area Conversions</b><br>
+		1 section = 1 sq. mile = 640 acres = 2.59 sq km = 259 hectares<br>
+		1 acre = 43,560 sq ft = 0.405 ha = 4047 sq m<br>
+		1 sq ft = 0.093 sq m<br>
+		1 sq km = 1,000,000 sq m = 100 ha = 247.1 acres<br>
+		1 ha = 10,000 sq m = 2.471 </p>
+	</div>
+	<div class="calculator-grid" id="column">
 		<div class="output">
 			<div data-previous-operation class="previous-operation"></div>
 			<div data-current-operation class="current-operation"></div>
@@ -30,7 +60,37 @@
 		<button data-number>0</button>
 		<button data-equals class="span-two">=</button>
 	</div>
-	<a href="/index.html"> <button type="button"> Return to Home </button> </a>
+	<div class="formula" id="column">
+		<p><b>Pre-algebra:</b><br>
+		Average/mean = Sum of values divided by the number of values.<br>
+		Probability = Target outcomes divided by total outcomes.<br>
+		Quadratic Formula = x = −b ± √b²-4ac/2a.<br>
+		MAD (Mean absolute deviation) = The mean of the sum of the point’s distances from the mean<br>
+		Range = Difference between the highest data value and the lowest data value<br>
+		<b>Trigonometry:</b><br>
+		Sine = Opposite divided by hypotenuse <br>
+		Cosine = Adjacent divided by hypotenuse<br>
+		Tangent = Opposite divided by adjacent<br>
+		(REMEMBER SOH-CAH-TOA)<br>
+		<b>Geometry:<b></b><br>
+		90* clockwise rotation (On graph) = (x,y) → (y,-x)<br>
+		90* counterclockwise rotation (On graph) = (x,y) → (-y,x)<br>
+		180* rotation = (x,y) → (-x,-y)<br>
+		Pythagorean Theorem = a²+b² = c² (c is hypotenuse)<br>
+		Area of circle = π times r² (r being radius)<br>
+		Circumference of circle = 2π *  r<br>
+		Area of triangle = Base times height divided by 2.<br>
+		<b>Intermediate-Algebra:</b><br>
+		Slope Formula = Slope = y₂ – y₁ divided by x₂ – x₁<br>
+		Slope Intercept = y = mx+b<br>
+		Distance Formula = d=√(x₁ – x₂)² + (y₁ – y₂)² </p>
+	</div>
+	<div id"centered">
+		<a href="/index.html"> <button  id="butt" type="button"> Return to Home </button> </a>
+	</div>
+	<div id="footer">
+			Copyright &copy; 2020 Semi Group Productions
+	</div>
 </body>
 </html>
  
