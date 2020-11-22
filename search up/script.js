@@ -1,18 +1,20 @@
 const btn = document.querySelector('#btn');
-const mytext = document.querySelector('#text-in').value;
 
 btn.onclick = function () {
-	const rbs = document.querySelectorAll('input[name="choice');
+	const mytext = document.querySelector('#text-in').value;
 	let selectedValue;
-	for(rb in rbs){
-		if(rb.checked){
-			selectedValue = rb.value; 
+	var radios = document.querySelectorAll('.ra');
+
+	for(radio in radios){
+		if(radio.checked){
+			selectedValue = radio.value;
 		}
 	}
+	console.log("finihaeorjghflsreg")
 	if(selectedValue == "Wikipedia"){
 		window.open(`https://en.wikipedia.org/wiki/${mytext}`);
 	}
-	else {
+	if(selectedValue == "Britannica") {
 		window.open(`https://www.britannica.com/search?query=${mytext}`);
 	}
 }
