@@ -1,6 +1,7 @@
 const titleInput = document.querySelector('#title');
 const bodyinput = document.querySelector('#body');
 const userlist = document.querySelector('#notes');
+const div = document.querySelector('#div')
 
 function add_on() {
   
@@ -10,4 +11,6 @@ function add_on() {
 
   titleInput.value = '';
   bodyinput.value = '';
+
+  div.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
 }
