@@ -72,6 +72,32 @@
     */
 }
 
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#calculator {
+    order: 1;
+}
+
+#notepad {
+    order: 2;
+}
+
+#Search {
+    order: 3;
+}
+
+#activities {
+    order: 4;
+}
+
+#timer {
+    order: 5;
+}
+
 button {
     color: #FFF;
     background-color: rgba(255, 0, 0, 0.75);
@@ -90,6 +116,15 @@ a {
     display: inline-block;
 }
 
+hr{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FADBD8 ;
+}
+
 #title {
 	text-align: center;
     background-color: #66ccff;
@@ -105,13 +140,4 @@ a {
     text-align: right;
     color: white;
     font-size: 1.4rem;
-}
-
-hr{
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #FADBD8 ;
 }
